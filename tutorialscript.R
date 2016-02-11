@@ -20,3 +20,8 @@ head(mydata$date)
 
 class(mydata$date)
 
+ggplot(data = mydata, aes(x=date, y = pm10)) + geom_line()
+
+ggplot(data = mydata) + aes(x=date, y = pm10) + geom_line()
+
+ggplot(data = mydata) + aes(x=date, y = pm10) + geom_line() + scale_y_log10()
