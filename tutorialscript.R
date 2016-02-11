@@ -86,3 +86,5 @@ ggplot(data = mydata.daily, aes(x = month,
   annotation_logticks(sides = "l") +
   scale_y_log10() + facet_wrap( ~ year,
                                 ncol = 2)
+
+z = 2 + 3
